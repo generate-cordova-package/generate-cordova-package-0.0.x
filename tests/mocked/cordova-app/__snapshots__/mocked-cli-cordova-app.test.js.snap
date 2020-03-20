@@ -94,7 +94,7 @@ exports[`start and run mocked CLI to create cordova-app 1`] = `
 +     \\"fsTree\\": Object {
         \\"test-app\\": Object {
 @@ --- --- @@
-  </html>\\",
+  \\",
 +         },
         },"
 `;
