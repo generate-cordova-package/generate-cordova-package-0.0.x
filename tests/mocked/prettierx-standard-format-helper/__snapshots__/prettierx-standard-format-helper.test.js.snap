@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`calls prettierx with correct options including correct parser 1`] = `
+Array [
+  Object {
+    "prettierxFormat": Object {
+      "options": Object {
+        "parser": "babel",
+        "semi": false,
+        "singleQuote": true,
+        "spaceBeforeFunctionParen": true,
+      },
+      "source": "console.log(1)",
+    },
+  },
+]
+`;
