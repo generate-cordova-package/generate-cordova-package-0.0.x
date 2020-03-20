@@ -86,6 +86,27 @@ exports[`start and run mocked CLI to create cordova-plugin 1`] = `
 +           \\"name\\": \\"email\\",
 +           \\"type\\": \\"text\\",
 +         },
++         Object {
++           \\"default\\": \\"demo\\",
++           \\"initial\\": \\"demo\\",
++           \\"message\\": \\"plugin JavaScript module name (without js extension)\\",
++           \\"name\\": \\"jsModuleName\\",
++           \\"type\\": \\"text\\",
++         },
++         Object {
++           \\"default\\": \\"Demo\\",
++           \\"initial\\": \\"Demo\\",
++           \\"message\\": \\"plugin JavaScript object name\\",
++           \\"name\\": \\"jsObjectName\\",
++           \\"type\\": \\"text\\",
++         },
++         Object {
++           \\"default\\": \\"demo\\",
++           \\"initial\\": \\"demo\\",
++           \\"message\\": \\"plugin JavaScript function name\\",
++           \\"name\\": \\"jsFunctionName\\",
++           \\"type\\": \\"text\\",
++         },
 +       ],
 +     },
 +   },
@@ -94,6 +115,6 @@ exports[`start and run mocked CLI to create cordova-plugin 1`] = `
         \\"test-plugin\\": Object {
 @@ --- --- @@
   \\",
-+       },
-      },"
++         },
+        },"
 `;

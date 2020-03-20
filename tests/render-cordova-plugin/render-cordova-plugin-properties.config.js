@@ -6,6 +6,9 @@ module.exports = {
   license: 'ISC',
   author: 'Alice',
   email: 'alice@alice.com',
+  jsModuleName: 'testModule',
+  jsObjectName: 'testObject',
+  jsFunctionName: 'testFunction',
   // added by `lib/with-copyright-year.js`
   // when used from the CLI:
   copyrightYear: 2023
