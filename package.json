@@ -20,6 +20,7 @@
   "scripts": {
     "lint": "prettier-standard --check && standard",
     "lint-fix": "prettier-standard && standard --fix",
+    "stryker": "stryker run",
     "test": "npm run lint && jest"
   },
   "// fs-tree NOTES": [
@@ -36,6 +37,9 @@
     "simple-xml-writer": "0.0.2"
   },
   "devDependencies": {
+    "@stryker-mutator/core": "^3.0.2",
+    "@stryker-mutator/javascript-mutator": "^3.0.2",
+    "@stryker-mutator/jest-runner": "^3.0.2",
     "jest": "^25.1.0",
     "prettier-standard": "^16.2.1",
     "snapshot-diff": "^0.7.0",
