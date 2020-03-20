@@ -1,0 +1,44 @@
+{
+  "name": "generate-cordova-package",
+  "version": "0.0.1-dev",
+  "description": "programmatically generate a Cordova package from user input",
+  "license": "MIT",
+  "bin": {
+    "generate-cordova-package": "./bin/cli.js"
+  },
+  "author": "Christopher J. Brody <chris.brody@gmail.com>",
+  "files": [
+    "LICENSE.md",
+    "README.md",
+    "bin",
+    "lib"
+  ],
+  "// prettier-standard & standard NOTES": [
+    "prettier-standard currently misses some standard rules",
+    "temporary workaround is to include both prettier-standard & standard"
+  ],
+  "scripts": {
+    "lint": "prettier-standard --check && standard",
+    "lint-fix": "prettier-standard && standard --fix",
+    "test": "npm run lint && jest"
+  },
+  "// fs-tree NOTES": [
+    "bluebird is currently required by fs-tree - not properly specified",
+    "(it is highly desired to resolve this implicit dependency in the future)"
+  ],
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "fs-tree": "^1.0.0",
+    "gitconfig": "^2.0.8",
+    "moment": "^2.24.0",
+    "prompts": "^2.3.2",
+    "simple-json-formatter": "^1.0.2",
+    "simple-xml-writer": "0.0.2"
+  },
+  "devDependencies": {
+    "jest": "^25.1.0",
+    "prettier-standard": "^16.2.1",
+    "snapshot-diff": "^0.7.0",
+    "standard": "^14.3.3"
+  }
+}

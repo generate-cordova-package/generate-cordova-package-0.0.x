@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`start and run mocked CLI to create cordova-app 1`] = `
+"Snapshot Diff:
+- First value
++ Second value
+
+@@ --- --- @@
+    Object {
++     \\"prompts\\": Object {
++       \\"questions\\": Array [
++         Object {
++           \\"choices\\": Array [
++             Object {
++               \\"title\\": \\"Cordova app\\",
++               \\"value\\": \\"cordova-app\\",
++             },
++             Object {
++               \\"disabled\\": true,
++               \\"title\\": \\"Cordova plugin\\",
++               \\"value\\": \\"cordova-plugin\\",
++             },
++           ],
++           \\"default\\": 0,
++           \\"initial\\": 0,
++           \\"message\\": \\"Select module type\\",
++           \\"name\\": \\"moduleType\\",
++           \\"type\\": \\"select\\",
++         },
++       ],
++     },
++   },
++   Object {
++     \\"gitconfig\\": Object {
++       \\"location\\": \\"global\\",
++     },
++   },
++   Object {
++     \\"prompts\\": Object {
++       \\"questions\\": Array [
++         Object {
++           \\"default\\": \\"demo-app\\",
++           \\"initial\\": \\"demo-app\\",
++           \\"message\\": \\"Cordova app name\\",
++           \\"name\\": \\"name\\",
++           \\"type\\": \\"text\\",
++         },
++         Object {
++           \\"default\\": \\"com.demoapp\\",
++           \\"initial\\": \\"com.demoapp\\",
++           \\"message\\": \\"Cordova app id\\",
++           \\"name\\": \\"id\\",
++           \\"type\\": \\"text\\",
++         },
++         Object {
++           \\"default\\": \\"demo app\\",
++           \\"initial\\": \\"demo app\\",
++           \\"message\\": \\"Cordova app description\\",
++           \\"name\\": \\"description\\",
++           \\"type\\": \\"text\\",
++         },
++         Object {
++           \\"default\\": \\"0.0.1-dev\\",
++           \\"initial\\": \\"0.0.1-dev\\",
++           \\"message\\": \\"Initial app version\\",
++           \\"name\\": \\"version\\",
++           \\"type\\": \\"text\\",
++         },
++         Object {
++           \\"default\\": \\"MIT\\",
++           \\"initial\\": \\"MIT\\",
++           \\"message\\": \\"Cordova app license\\",
++           \\"name\\": \\"license\\",
++           \\"type\\": \\"text\\",
++         },
++         Object {
++           \\"default\\": \\"chris\\",
++           \\"initial\\": \\"chris\\",
++           \\"message\\": \\"author name\\",
++           \\"name\\": \\"author\\",
++           \\"type\\": \\"text\\",
++         },
++         Object {
++           \\"default\\": \\"chris@chris.com\\",
++           \\"initial\\": \\"chris@chris.com\\",
++           \\"message\\": \\"author email\\",
++           \\"name\\": \\"email\\",
++           \\"type\\": \\"text\\",
++         },
++       ],
++     },
++   },
++   Object {
++     \\"fsTree\\": Object {
+        \\"test-app\\": Object {
+@@ --- --- @@
+  </html>\\",
++         },
+        },"
+`;

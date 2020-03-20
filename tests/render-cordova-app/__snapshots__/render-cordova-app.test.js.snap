@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders fs-tree object correctly for cordova-app 1`] = `
+Object {
+  "test-app": Object {
+    "README.md": "# test-app
+
+Copyright 2023-present Alice <alice@alice.com>",
+    "config.xml": "<widget id=\\"cc.testapp\\" version=\\"0.1.1\\">
+  <name>test-app</name>
+  <description>test app</description>
+</widget>",
+    "package.json": "{
+  \\"name\\": \\"test-app\\",
+  \\"version\\": \\"0.1.1\\",
+  \\"// copyright\\": \\"Copyright 2023-present Alice <alice@alice.com>\\",
+  \\"description\\": \\"test app\\",
+  \\"license\\": \\"ISC\\",
+  \\"author\\": {
+    \\"name\\": \\"Alice\\",
+    \\"email\\": \\"alice@alice.com\\"
+  }
+}",
+    "www": Object {
+      "index.html": "<html>
+  <body>
+    <h1>test-app</h1>
+    <div id=\\"status\\"/>
+    <script src=\\"cordova.js\\"></script>
+  </body>
+</html>",
+    },
+  },
+}
+`;
