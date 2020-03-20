@@ -25,7 +25,14 @@ Copyright 2023-present Alice <alice@alice.com>
 }
 ",
     "www": Object {
+      "body.css": "body {
+  background-color: #fff;
+}
+",
       "index.html": "<html>
+  <header>
+    <link rel=\\"stylesheet\\" href=\\"body.css\\"/>
+  </header>
   <body>
     <h1>test-app</h1>
     <div id=\\"status\\"/>
