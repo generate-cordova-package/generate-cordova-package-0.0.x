@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders fs-tree object correctly for cordova-plugin 1`] = `
+Object {
+  "test-plugin": Object {
+    "README.md": "# test-plugin
+
+Copyright 2023-present Alice <alice@alice.com>
+",
+    "package.json": "{
+  \\"name\\": \\"test-plugin\\",
+  \\"version\\": \\"0.1.1\\",
+  \\"// copyright\\": \\"Copyright 2023-present Alice <alice@alice.com>\\",
+  \\"description\\": \\"test plugin\\",
+  \\"license\\": \\"ISC\\",
+  \\"author\\": {
+    \\"name\\": \\"Alice\\",
+    \\"email\\": \\"alice@alice.com\\"
+  }
+}
+",
+    "plugin.xml": "<plugin id=\\"cc.testplugin\\" version=\\"0.1.1\\">
+  <name>test-plugin</name>
+</plugin>
+",
+  },
+}
+`;

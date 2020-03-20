@@ -1,6 +1,6 @@
 # generate-cordova-package
 
-programmatically generate a Cordova package from interactive user input - with no templates involved - Cordova app only at this point
+programmatically generate a Cordova package from interactive user input - with no templates involved - Cordova app or currently non-functional Cordova plugin
 
 **Author:** Christopher J. Brody
 

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`start and run mocked CLI to create cordova-app 1`] = `
+exports[`start and run mocked CLI to create cordova-plugin 1`] = `
 "Snapshot Diff:
 - First value
 + Second value
@@ -38,51 +38,51 @@ exports[`start and run mocked CLI to create cordova-app 1`] = `
 +     \\"prompts\\": Object {
 +       \\"questions\\": Array [
 +         Object {
-+           \\"default\\": \\"demo-app\\",
-+           \\"initial\\": \\"demo-app\\",
-+           \\"message\\": \\"Cordova app name\\",
++           \\"default\\": \\"demo-plugin\\",
++           \\"initial\\": \\"demo-plugin\\",
++           \\"message\\": \\"Cordova plugin name\\",
 +           \\"name\\": \\"name\\",
 +           \\"type\\": \\"text\\",
 +         },
 +         Object {
-+           \\"default\\": \\"com.demoapp\\",
-+           \\"initial\\": \\"com.demoapp\\",
-+           \\"message\\": \\"Cordova app id\\",
++           \\"default\\": \\"com.demoplugin\\",
++           \\"initial\\": \\"com.demoplugin\\",
++           \\"message\\": \\"pluin id\\",
 +           \\"name\\": \\"id\\",
 +           \\"type\\": \\"text\\",
 +         },
 +         Object {
-+           \\"default\\": \\"demo app\\",
-+           \\"initial\\": \\"demo app\\",
-+           \\"message\\": \\"Cordova app description\\",
++           \\"default\\": \\"demo plugin\\",
++           \\"initial\\": \\"demo plugin\\",
++           \\"message\\": \\"Cordova plugin description\\",
 +           \\"name\\": \\"description\\",
 +           \\"type\\": \\"text\\",
 +         },
 +         Object {
 +           \\"default\\": \\"0.0.1-dev\\",
 +           \\"initial\\": \\"0.0.1-dev\\",
-+           \\"message\\": \\"Initial app version\\",
++           \\"message\\": \\"Initial plugin version\\",
 +           \\"name\\": \\"version\\",
 +           \\"type\\": \\"text\\",
 +         },
 +         Object {
 +           \\"default\\": \\"MIT\\",
 +           \\"initial\\": \\"MIT\\",
-+           \\"message\\": \\"Cordova app license\\",
++           \\"message\\": \\"Cordova plugin license\\",
 +           \\"name\\": \\"license\\",
 +           \\"type\\": \\"text\\",
 +         },
 +         Object {
 +           \\"default\\": \\"chris\\",
 +           \\"initial\\": \\"chris\\",
-+           \\"message\\": \\"author name\\",
++           \\"message\\": \\"Author name\\",
 +           \\"name\\": \\"author\\",
 +           \\"type\\": \\"text\\",
 +         },
 +         Object {
 +           \\"default\\": \\"chris@chris.com\\",
 +           \\"initial\\": \\"chris@chris.com\\",
-+           \\"message\\": \\"author email\\",
++           \\"message\\": \\"Author email\\",
 +           \\"name\\": \\"email\\",
 +           \\"type\\": \\"text\\",
 +         },
@@ -91,9 +91,9 @@ exports[`start and run mocked CLI to create cordova-app 1`] = `
 +   },
 +   Object {
 +     \\"fsTree\\": Object {
-        \\"test-app\\": Object {
+        \\"test-plugin\\": Object {
 @@ --- --- @@
   \\",
-+         },
-        },"
++       },
+      },"
 `;
