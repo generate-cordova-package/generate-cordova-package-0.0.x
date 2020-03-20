@@ -1,12 +1,16 @@
 # generate-cordova-package
 
-programmatically generate a Cordova package from interactive user input - with no templates involved - Cordova HTML app only at this point
+programmatically generate a Cordova package from interactive user input - with no templates involved - Cordova app only at this point
 
 **Author:** Christopher J. Brody
 
 **LICENSE:** MIT, with commercial license option
 
 ## Important TODO items
+
+### Generated code
+
+- factor some codegen tokens out to existing or separate tokens module
 
 ### Testing
 

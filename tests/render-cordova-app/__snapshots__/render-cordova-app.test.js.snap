@@ -25,6 +25,19 @@ Copyright 2023-present Alice <alice@alice.com>
 }
 ",
     "www": Object {
+      "app.js": "// Copyright 2023-present Alice <alice@alice.com>
+
+document
+  .getElementById('status')
+  .appendChild(document.createElement('b'))
+  .appendChild(document.createTextNode('status:'))
+document.addEventListener('deviceready', function () {
+  document
+    .getElementById('status')
+    .appendChild(document.createElement('i'))
+    .appendChild(document.createTextNode('ready'))
+})
+",
       "body.css": "body {
   background-color: #fff;
 }
@@ -37,6 +50,7 @@ Copyright 2023-present Alice <alice@alice.com>
     <h1>test-app</h1>
     <div id=\\"status\\"/>
     <script src=\\"cordova.js\\"></script>
+    <script src=\\"app.js\\"></script>
   </body>
 </html>
 ",
