@@ -1,6 +1,6 @@
 {
   "name": "generate-cordova-package",
-  "version": "0.0.1-dev",
+  "version": "0.0.1",
   "description": "programmatically generate a Cordova package from user input",
   "license": "MIT",
   "bin": {
