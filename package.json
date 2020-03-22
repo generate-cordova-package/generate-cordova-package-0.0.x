@@ -29,7 +29,7 @@
     "(it is highly desired to resolve this implicit dependency in the future)"
   ],
   "dependencies": {
-    "@babel/generator": "^7.9.0",
+    "@babel/generator": "^7.9.3",
     "@babel/types": "^7.9.0",
     "bluebird": "^3.7.2",
     "css": "^2.2.4",
