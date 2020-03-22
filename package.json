@@ -7,6 +7,7 @@
     "generate-cordova-package": "./bin/cli.js"
   },
   "author": "Christopher J. Brody <chris.brody@gmail.com>",
+  "repository": "github:generate-cordova-package/generate-cordova-package-dev",
   "files": [
     "LICENSE.md",
     "README.md",
