@@ -19,7 +19,7 @@ programmatically generate a Cordova package from interactive user input - with n
 
 ### dependencies
 
-- find an improved tool or solution for linting with both prettier-standard & standard
+- find an improved tool or solution for linting with both prettier-standard formatter & standard eslint coding rules
 - fix or replace fs-tree to avoid need for bluebird in dependencies
 - some of the existing lib helpers should be extracted into external helper packages
 - some package dependencies and subdependencies are badly outdated
