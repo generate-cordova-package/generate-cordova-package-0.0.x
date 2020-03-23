@@ -8,9 +8,17 @@ programmatically generate a Cordova app or native plugin package from interactiv
 
 ## Important TODO items
 
-### Generated code
+### Functional
 
-- factor some codegen tokens out to existing or separate tokens module
+- generate plugin demo app
+- make it optional to generate a pure-JavaScript plugin in addition to native plugin for Android & iOS
+- allow different names for JavaScript module object name vs window object name
+- more improvements to flexibility in generated `js-module` element in `plugin.xml`
+
+### Cleanup
+
+- factor some `const` tokens & internal codegen helper functions out to existing or separate tokens modules, especially for the JavaScript codegen
+- factor some more duplicated code out of `lib/cordova-app` & `lib/cordova-plugin`
 
 ### Testing
 
