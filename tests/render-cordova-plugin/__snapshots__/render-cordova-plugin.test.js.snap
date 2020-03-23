@@ -23,13 +23,91 @@ Copyright 2023-present Alice <alice@alice.com>
   <js-module src=\\"www/testModule.js\\" name=\\"TestObject\\">
     <runs/>
   </js-module>
+  <platform name=\\"android\\">
+    <config-file target=\\"config.xml\\" parent=\\"/*\\">
+      <feature name=\\"TestPluginObject\\">
+        <param name=\\"android-package\\" value=\\"cc.test.plugin.TestPluginObject\\"/>
+      </feature>
+    </config-file>
+    <source-file src=\\"src/android/TestPluginObject.java\\" target-dir=\\"src/cc/test/plugin\\"/>
+  </platform>
+  <platform name=\\"ios\\">
+    <config-file target=\\"config.xml\\" parent=\\"/*\\">
+      <feature name=\\"TestPluginObject\\">
+        <param name=\\"ios-package\\" value=\\"TestPluginObject\\"/>
+      </feature>
+    </config-file>
+    <source-file src=\\"src/ios/TestPluginObject.m\\"/>
+  </platform>
+  <platform name=\\"osx\\">
+    <config-file target=\\"config.xml\\" parent=\\"/*\\">
+      <feature name=\\"TestPluginObject\\">
+        <param name=\\"osx-package\\" value=\\"TestPluginObject\\"/>
+      </feature>
+    </config-file>
+    <source-file src=\\"src/ios/TestPluginObject.m\\"/>
+  </platform>
 </plugin>
 ",
+    "src": Object {
+      "android": Object {
+        "TestPluginObject.java": "// Copyright 2023-present Alice <alice@alice.com>
+
+package cc.test.plugin;
+
+import org.apache.cordova.CordovaPlugin;
+import org.apache.cordova.CallbackContext;
+
+import org.json.JSONArray;
+
+public class TestPluginObject extends CordovaPlugin {
+  @Override
+  public boolean execute(String action, JSONArray args, CallbackContext cbc) {
+    switch (action) {
+      case \\"testPluginFunction\\":
+        cbc.success(args);
+      return true;
+    }
+    return false;
+  }
+}",
+      },
+      "ios": Object {
+        "TestPluginObject.m": "// Copyright 2023-present Alice <alice@alice.com>
+
+#import <Cordova/CDVPlugin.h>
+
+@interface TestPluginObject : CDVPlugin
+
+- (void) testPluginFunction : (CDVInvokedUrlCommand *) command;
+
+@end
+
+@implementation TestPluginObject
+
+- (void) testPluginFunction : (CDVInvokedUrlCommand *) command
+{
+  CDVPluginResult * result = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsArray:command.arguments];;
+  [self.commandDelegate sendPluginResult:result callbackId:command.callbackId];
+}
+
+@end
+",
+      },
+    },
     "www": Object {
       "testModule.js": "// Copyright 2023-present Alice <alice@alice.com>
 
 function testFunction (callback) {
-  callback('pong')
+  cordova.exec(
+    function () {
+      callback('pong')
+    },
+    null,
+    'TestPluginObject',
+    'testPluginFunction',
+    null
+  )
 }
 
 window.TestObject = {

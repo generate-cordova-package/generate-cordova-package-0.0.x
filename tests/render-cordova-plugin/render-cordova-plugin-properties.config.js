@@ -9,6 +9,9 @@ module.exports = {
   jsModuleName: 'testModule',
   jsObjectName: 'TestObject',
   jsFunctionName: 'testFunction',
+  androidPackageName: 'cc.test.plugin',
+  nativeObjectName: 'TestPluginObject',
+  nativeFunctionName: 'testPluginFunction',
   // added by `lib/with-copyright-year.js`
   // when used from the CLI:
   copyrightYear: 2023
