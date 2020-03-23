@@ -6,6 +6,10 @@ programmatically generate a Cordova app or native plugin package from interactiv
 
 **LICENSE:** MIT, with commercial license option
 
+## General motivation
+
+This should help avoid some potential copyright issues with using templates from various sources.
+
 ## Important TODO items
 
 ### Functional
