@@ -20,7 +20,6 @@ Copyright 2023-present Alice <alice@alice.com>
 }
 ",
     "plugin.xml": "<plugin id=\\"cc.testplugin\\" version=\\"0.1.1\\">
-  <name>test-plugin</name>
   <js-module src=\\"www/testModule.js\\" name=\\"testObject\\">
     <runs/>
   </js-module>
