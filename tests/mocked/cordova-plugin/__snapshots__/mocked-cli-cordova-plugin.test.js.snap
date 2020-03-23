@@ -137,5 +137,83 @@ exports[`start and run mocked CLI to create cordova-plugin 1`] = `
 @@ --- --- @@
   \\",
 +         },
++       },
++     },
++   },
++   Object {
++     \\"prompts\\": Object {
++       \\"questions\\": Array [
++         Object {
++           \\"default\\": \\"demo-app\\",
++           \\"initial\\": \\"demo-app\\",
++           \\"message\\": \\"Cordova plugin demo app name\\",
++           \\"name\\": \\"demoAppName\\",
++           \\"type\\": \\"text\\",
++         },
++         Object {
++           \\"default\\": \\"com.demoapp\\",
++           \\"initial\\": \\"com.demoapp\\",
++           \\"message\\": \\"Cordova plugin demo app id\\",
++           \\"name\\": \\"id\\",
++           \\"type\\": \\"text\\",
++         },
++         Object {
++           \\"default\\": \\"demo app\\",
++           \\"initial\\": \\"demo app\\",
++           \\"message\\": \\"Cordova plugin demo app description\\",
++           \\"name\\": \\"description\\",
++           \\"type\\": \\"text\\",
++         },
++         Object {
++           \\"default\\": \\"0.0.1-dev\\",
++           \\"initial\\": \\"0.0.1-dev\\",
++           \\"message\\": \\"plugin demo app version\\",
++           \\"name\\": \\"version\\",
++           \\"type\\": \\"text\\",
++         },
++         Object {
++           \\"default\\": \\"MIT\\",
++           \\"initial\\": \\"MIT\\",
++           \\"message\\": \\"plugin demo app license\\",
++           \\"name\\": \\"license\\",
++           \\"type\\": \\"text\\",
++         },
++         Object {
++           \\"default\\": \\"Alice\\",
++           \\"initial\\": \\"Alice\\",
++           \\"message\\": \\"demo app author name\\",
++           \\"name\\": \\"author\\",
++           \\"type\\": \\"text\\",
++         },
++         Object {
++           \\"default\\": \\"alice@alice.com\\",
++           \\"initial\\": \\"alice@alice.com\\",
++           \\"message\\": \\"demo app author email\\",
++           \\"name\\": \\"email\\",
++           \\"type\\": \\"text\\",
+          },
++         Object {
++           \\"default\\": \\"TestObject\\",
++           \\"initial\\": \\"TestObject\\",
++           \\"message\\": \\"demo app JavaScript object name from plugin (should match plugin)\\",
++           \\"name\\": \\"jsObjectName\\",
++           \\"type\\": \\"text\\",
+          },
++         Object {
++           \\"default\\": \\"testFunction\\",
++           \\"initial\\": \\"testFunction\\",
++           \\"message\\": \\"demo app JavaScript function name from plugin (should match plugin)\\",
++           \\"name\\": \\"jsFunctionName\\",
++           \\"type\\": \\"text\\",
+          },
++       ],
++     },
++   },
+    Object {
++     \\"fsTree\\": Object {
+        \\"test-plugin-demo-app\\": Object {
+@@ --- --- @@
+  \\",
++         },
         },"
 `;

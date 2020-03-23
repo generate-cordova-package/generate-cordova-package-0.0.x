@@ -9,6 +9,8 @@ const renderCordovaPluginTree = require('../../../lib/cordova-plugin/render')
 
 const renderCordovaPluginProperties = require('../../render-cordova-plugin/render-cordova-plugin-properties.config')
 
+const renderPluginDemoApp = require('../../../lib/cordova-plugin/demo-app/render')
+
 const mockOutputLog = []
 
 const mockMainPromptResponse = {
@@ -16,6 +18,24 @@ const mockMainPromptResponse = {
 }
 
 const mockPluginResponseProperties = renderCordovaPluginProperties
+
+const mockDemoAppResponseProperties = {
+  demoAppName: 'test-plugin-demo-app',
+  ...renderCordovaPluginProperties,
+  id: 'cc.plugintestdemo',
+  // plugin property that should be removed here:
+  name: null
+}
+
+// map response by prompt questions[0].name:
+const mockResponseMap = {
+  // select module type:
+  moduleType: mockMainPromptResponse,
+  // cordova-plugin questions, starting with plugin name:
+  name: mockPluginResponseProperties,
+  // demo app questions, starting with demoAppName:
+  demoAppName: mockDemoAppResponseProperties
+}
 
 jest.mock('gitconfig', () => ({
   get: options => {
@@ -32,11 +52,7 @@ jest.mock('prompts', () => (questions, _) => {
 
   mockOutputLog.push({ prompts: { questions } })
 
-  return Promise.resolve(
-    questions[0].name === 'moduleType'
-      ? mockMainPromptResponse
-      : mockPluginResponseProperties
-  )
+  return Promise.resolve(mockResponseMap[questions[0].name])
 })
 
 jest.mock('moment', () => () => ({
@@ -51,15 +67,18 @@ jest.mock('fs-tree', () => tree => {
 it('start and run mocked CLI to create cordova-plugin', async () => {
   await startMain()
 
-  // NOTE that the results of `lib/cordova-plugin/render.js`
-  // are checked in another test case;
-  // no need to check here.
+  // NOTE that the results of `lib/cordova-plugin/render.js` &
+  // `lib/cordova-plugin/demo-app/render.js` are checked in
+  // other test cases - no need to check here.
   expect(
     snapshotDiff(
-      // with rendered tree in an array to make snapshot-diff happy
-      [renderCordovaPluginTree(renderCordovaPluginProperties)],
+      // compare mockOutputLog to array of rendered plugin & demo app trees:
+      [
+        renderCordovaPluginTree(renderCordovaPluginProperties),
+        renderPluginDemoApp(mockDemoAppResponseProperties)
+      ],
       mockOutputLog,
-      // cleaner snapshot diffs
+      // for cleaner snapshot diffs
       { contextLines: 1, stablePatchmarks: true }
     )
   ).toMatchSnapshot()
