@@ -7,7 +7,7 @@ module.exports = {
   author: 'Alice',
   email: 'alice@alice.com',
   jsModuleName: 'testModule',
-  jsObjectName: 'testObject',
+  jsObjectName: 'TestObject',
   jsFunctionName: 'testFunction',
   // added by `lib/with-copyright-year.js`
   // when used from the CLI:

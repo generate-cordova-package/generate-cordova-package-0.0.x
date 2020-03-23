@@ -20,7 +20,7 @@ Copyright 2023-present Alice <alice@alice.com>
 }
 ",
     "plugin.xml": "<plugin id=\\"cc.testplugin\\" version=\\"0.1.1\\">
-  <js-module src=\\"www/testModule.js\\" name=\\"testObject\\">
+  <js-module src=\\"www/testModule.js\\" name=\\"TestObject\\">
     <runs/>
   </js-module>
 </plugin>
@@ -32,7 +32,7 @@ function testFunction (callback) {
   callback('pong')
 }
 
-window.testObject = {
+window.TestObject = {
   testFunction: testFunction
 }
 ",
