@@ -135,17 +135,14 @@ exports[`start and run mocked CLI to create cordova-plugin 1`] = `
 +     \\"fsTree\\": Object {
         \\"test-plugin\\": Object {
 @@ --- --- @@
-  \\",
-+         },
-        },
-@@ --- --- @@
-    },
-+   Object {
-+     \\"prompts\\": Object {
-+       \\"questions\\": Array [
-          Object {
+      },
++   },
+    Object {
 -     \\"undefined\\": Object {
 -       \\"README.md\\": \\"# 
++     \\"prompts\\": Object {
++       \\"questions\\": Array [
++         Object {
 +           \\"default\\": \\"demo-app\\",
 +           \\"initial\\": \\"demo-app\\",
 +           \\"message\\": \\"Cordova plugin demo app name\\",
@@ -216,8 +213,7 @@ exports[`start and run mocked CLI to create cordova-plugin 1`] = `
 +       \\"test-plugin-demo-app\\": Object {
 +         \\"README.md\\": \\"# test-plugin-demo-app
 
-- Copyright 2023-present Alice <alice@alice.com>
-+ Copyright -present Alice <alice@alice.com>
+@@ --- --- @@
   \\",
 -       \\"config.xml\\": \\"<widget id=\\\\\\"cc.testplugin\\\\\\" version=\\\\\\"0.1.1\\\\\\">
 +         \\"config.xml\\": \\"<widget id=\\\\\\"cc.plugintestdemo\\\\\\" version=\\\\\\"0.1.1\\\\\\">
@@ -227,14 +223,6 @@ exports[`start and run mocked CLI to create cordova-plugin 1`] = `
           \\"package.json\\": \\"{
 +   \\\\\\"name\\\\\\": \\\\\\"test-plugin-demo-app\\\\\\",
     \\\\\\"version\\\\\\": \\\\\\"0.1.1\\\\\\",
--   \\\\\\"// copyright\\\\\\": \\\\\\"Copyright 2023-present Alice <alice@alice.com>\\\\\\",
-+   \\\\\\"// copyright\\\\\\": \\\\\\"Copyright -present Alice <alice@alice.com>\\\\\\",
-    \\\\\\"description\\\\\\": \\\\\\"test plugin\\\\\\",
-@@ --- --- @@
-          \\"www\\": Object {
--         \\"app.js\\": \\"// Copyright 2023-present Alice <alice@alice.com>
-+           \\"app.js\\": \\"// Copyright -present Alice <alice@alice.com>
-
 @@ --- --- @@
     <body>
 +     <h1>test-plugin-demo-app</h1>
