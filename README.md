@@ -31,6 +31,7 @@ This should help avoid some potential copyright issues with using templates from
 
 ### dependencies
 
+- `npm audit` shows a low-severity security warning due to `minimist` sub-dependency of `prettierx`
 - find an improved tool or solution for linting with both prettier-standard formatter & standard eslint coding rules
 - fix or replace fs-tree to avoid need for bluebird in dependencies
 - some of the existing lib helpers should be extracted into external helper packages
