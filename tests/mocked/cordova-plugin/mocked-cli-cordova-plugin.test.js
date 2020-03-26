@@ -17,14 +17,21 @@ const mockMainPromptResponse = {
   moduleType: 'cordova-plugin'
 }
 
-const mockPluginResponseProperties = renderCordovaPluginProperties
+// render with these properties (including copyrightYear)
+// is covered by another test case:
+const mockPluginResponseProperties = {
+  ...renderCordovaPluginProperties,
+  // should not be part of this mock prompt response:
+  copyrightYear: undefined
+}
 
 const mockDemoAppResponseProperties = {
   demoAppName: 'test-plugin-demo-app',
   ...renderCordovaPluginProperties,
   id: 'cc.plugintestdemo',
-  // plugin property that should be removed here:
-  name: null
+  // should not be part of this mock prompt response:
+  name: undefined,
+  copyrightYear: undefined
 }
 
 // map response by prompt questions[0].name:
@@ -75,7 +82,7 @@ it('start and run mocked CLI to create cordova-plugin', async () => {
       // compare mockOutputLog to array of rendered plugin & demo app trees:
       [
         renderCordovaPluginTree(renderCordovaPluginProperties),
-        renderPluginDemoApp(mockDemoAppResponseProperties)
+        renderPluginDemoApp(renderCordovaPluginProperties)
       ],
       mockOutputLog,
       // for cleaner snapshot diffs

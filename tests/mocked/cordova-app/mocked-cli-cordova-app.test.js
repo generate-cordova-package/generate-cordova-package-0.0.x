@@ -13,8 +13,13 @@ const mockMainPromptResponse = {
   moduleType: 'cordova-app'
 }
 
-// render with these properties is covered by another test case:
-const mockAppResponseProperties = renderCordovaAppProperties
+// render with these properties (including copyrightYear)
+// is covered by another test case:
+const mockAppResponseProperties = {
+  ...renderCordovaAppProperties,
+  // should not be part of the mock prompt response:
+  copyrightYear: undefined
+}
 
 const mockOutputLog = []
 
@@ -57,7 +62,7 @@ it('start and run mocked CLI to create cordova-app', async () => {
   expect(
     snapshotDiff(
       // with rendered tree in an array to make snapshot-diff happy
-      [renderCordovaAppTree(mockAppResponseProperties)],
+      [renderCordovaAppTree(renderCordovaAppProperties)],
       mockOutputLog,
       // cleaner snapshot diffs
       { contextLines: 1, stablePatchmarks: true }
