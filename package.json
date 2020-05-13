@@ -48,7 +48,7 @@
     "@stryker-mutator/jest-runner": "^3.0.2",
     "jest": "^26.0.1",
     "prettier-standard": "^16.2.1",
-    "snapshot-diff": "^0.7.0",
+    "snapshot-diff": "^0.8.0",
     "standard": "^14.3.3"
   }
 }
