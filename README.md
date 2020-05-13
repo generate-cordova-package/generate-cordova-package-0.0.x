@@ -26,7 +26,6 @@ This should help avoid some potential copyright issues with using templates from
 
 ### Testing
 
-- detect presence of extra `\r` character in test snapshots, to ensure it does not show up again (potential mutation of the `/\r\n/g` regexp was not detected by Stryker Mutator 3.0.2)
 - integration testing of `bin/cli.js`
 
 ### dependencies
