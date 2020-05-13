@@ -43,12 +43,12 @@
     "update-notifier": "^4.1.0"
   },
   "devDependencies": {
-    "@stryker-mutator/core": "^3.0.2",
-    "@stryker-mutator/javascript-mutator": "^3.0.2",
-    "@stryker-mutator/jest-runner": "^3.0.2",
+    "@stryker-mutator/core": "^3.1.0",
+    "@stryker-mutator/javascript-mutator": "^3.1.0",
+    "@stryker-mutator/jest-runner": "^3.1.0",
     "jest": "^26.0.1",
-    "prettier-standard": "^16.2.1",
+    "prettier-standard": "^16.3.0",
     "snapshot-diff": "^0.8.0",
-    "standard": "^14.3.3"
+    "standard": "^14.3.4"
   }
 }
