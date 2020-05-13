@@ -8,5 +8,9 @@ const renderCordovaAppProperties = require('./render-cordova-app-properties.conf
 it('renders fs-tree object correctly for cordova-app', () => {
   const outputTree = renderCordovaAppTree(renderCordovaAppProperties)
 
-  expect(outputTree).toMatchSnapshot()
+  // using JSON.stringify in this test case to help verify that
+  // lib/helpers/xml-component-to-string.js handles invisible characters
+  // such as unwanted carriage return (\r) & correct newline (\n)
+  // all correctly
+  expect(JSON.stringify(outputTree)).toMatchSnapshot()
 })
