@@ -39,7 +39,8 @@
     "prettierx": "^0.11.0",
     "prompts": "^2.3.2",
     "simple-json-formatter": "^1.0.2",
-    "update-notifier": "^4.1.0"
+    "update-notifier": "^4.1.0",
+    "xml-writer": "^1.7.0"
   },
   "devDependencies": {
     "@stryker-mutator/core": "^3.0.2",
